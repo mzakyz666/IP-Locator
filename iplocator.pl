@@ -63,7 +63,7 @@ IP Geolocation Tool
 };
  
 print color 'reset';
-@iphost=$ARGV[0] || die "Usage : ./Iplocation.pl [host] [ip] [domain] \n\nEx:  ./Iplocation.pl  www.google.com \n     ./Iplocation.pl  216.58.210.206\n \n";
+@iphost=$ARGV[0] || die "Usage : ./iplocation.pl [host] [ip] [domain] \n\nEx:  ./iplocation.pl  www.google.com \n     ./iplocation.pl  216.58.210.206\n \n";
 my @ip = inet_ntoa(scalar gethostbyname("@iphost")or die "IP or Host invalid!\n");
 my @hn = scalar gethostbyaddr(inet_aton(@ip),AF_INET);
  
