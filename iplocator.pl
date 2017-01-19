@@ -5,6 +5,8 @@
 #API documentation - http://ip-api.com/docs/
 #you can see you external ip using this Bash script:
 #read COUNTRY IP <<< $(wget -qO- http://ip-api.com/line/?fields=countryCode,query); echo $IP $COUNTRY
+#It may give you error if you havent updated your perl libs
+#So to update and install. For Kali Linux or similliary, use command: $ apt-get install liblocal-lib-perl
 
 use Socket;
 use Term::ANSIColor;
